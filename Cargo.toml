@@ -1,0 +1,15 @@
+[package]
+name = "universal_nvidia_driver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winapi = { version = "0.3", features = ["winuser", "winbase", "winreg", "handleapi", "processthreadsapi"] }
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+zip = "0.6"
+thiserror = "1.0"
+windows = { version = "0.48", features = ["Win32_Foundation", "Win32_System_Registry", "Win32_Storage_InstallableFileSystems"] }
